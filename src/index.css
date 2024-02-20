@@ -4,13 +4,16 @@
 
 @layer base {
   body {
-    @apply bg-gray-400;
+    @apply bg-white;
   }
 }
 
 @font-face {
   font-family: "Poppins-Bold";
-  font-family: "Poppins-Regular";
   src: url("./assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
   src: url("./assets/Fonts/Poppins-Regular.ttf");
 }
