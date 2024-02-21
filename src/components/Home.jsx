@@ -10,19 +10,19 @@ function Home() {
   const getJoke = () => {
     fetch("https://api.chucknorris.io/jokes/random")
       .then((res) => res.json())
-      .then((joke) => {
+      .then((joke) => { 
         setJokes(joke["value"]);
         console.log(joke);
       });
   };
 
   return (
-    <div className="gap-2 w-full h-screen flex flex-col justify-center items-center">
+    <div className="gap-5 w-full h-screen flex flex-col justify-center items-center">
       <h1 className="font-poppins-bold text-xl">HOME</h1>
       <p>{jokes}</p>
       <button
         onClick={getJoke}
-        className="p-2 bg-gray-600 rounded-sm text-stone-800"
+        className="p-2 bg-gray-600 rounded-lg text-red-400"
       >
         Click for Jokes!
       </button>
